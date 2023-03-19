@@ -27,8 +27,8 @@ def mandar_msg(contato):
     time.sleep(3)
     pyautogui.keyDown("enter")
 
-# --Coloque aqui a lista de números para os quais deseja enviar uma mensagem--
-# Não esqueça de colocar o código internacional, código regional e depois o número
+# -- Coloque na lista contatos os números para os quais deseja enviar a mensagem, separados por virgula --
+# Código regional e depois o número
 # Exemplo: São Paulo (11) ; Número: 9xxxxyyyy -> 119xxxxyyyy
 contatos = []
 
