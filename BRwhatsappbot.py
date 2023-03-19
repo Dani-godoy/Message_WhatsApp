@@ -20,20 +20,21 @@ def mandar_msg(contato):
     time.sleep(5)
     pyautogui.keyDown("enter")
     time.sleep(5)
-    pyautogui.write("Add your message here!")
-    #If you want to send the message in more lines, uncomment the lines below to enter in WhatsApp and repeat the process if you want
+    pyautogui.write("Adicione sua mensagem aqui!")
+    #Caso queira mandar a mensagem em mais linhas, descomente as linhas abaixo para dar o enter no WhatsApp e repita o processo se quiser
     #pyautogui.hotkey('shift','enter')
-    #pyautogui.write("Add the rest of your message here!")
+    #pyautogui.write("Adicione o resto da sua mensagem aqui!")
     time.sleep(3)
     pyautogui.keyDown("enter")
 
-# --Put here the list of numbers you want to send a message to--
-# Don't forget to put the international code, Regional Code and then the Number
-# Exemple: Brazil code +55 ; São Paulo city (11) ; number: 9xxxxyyyy -> 55119xxxxyyyy
-contacts = [11941399819, 11964742609]
+# --Coloque aqui a lista de números para os quais deseja enviar uma mensagem--
+# Não esqueça de colocar o código internacional, código regional e depois o número
+# Exemplo: São Paulo (11) ; Número: 9xxxxyyyy -> 119xxxxyyyy
+contatos = []
 
-for i in range(len(contacts)):
-   contact=contacts[i]
-   mandar_msg(contact)
+for i in range(len(contatos)):
+   contato=contatos[i]
+   mandar_msg(contato)
+
 
 
