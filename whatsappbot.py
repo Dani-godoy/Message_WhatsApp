@@ -30,7 +30,7 @@ def send_msg(contact):
 # --Put here the list of numbers you want to send a message to--
 # Don't forget to put the international code, Regional Code and then the Number
 # Exemple: Brazil code +55 ; São Paulo city (11) ; number: 9xxxxyyyy -> 55119xxxxyyyy
-contacts = [1]
+contacts = []
 
 for i in range(len(contacts)):
    contact=contacts[i]
